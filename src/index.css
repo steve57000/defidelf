@@ -2,15 +2,24 @@
   font-family: myFirstFont;
   src: url(./assets/fonts/Alice-Regular.ttf);
 }
-
+html {
+  font-size: 100%;
+}
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: -apple-system, myFirstFont,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0 50px;
+  font-size: 0.75em;
+  width: 100%;
+  max-width: 1280px;
 }
 
+h1{
+
+}
 code {
   font-family: myFirstFont,
     monospace;

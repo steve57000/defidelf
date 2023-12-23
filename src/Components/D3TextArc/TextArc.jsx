@@ -1,4 +1,5 @@
 import {useEffect, useRef} from "react";
+import '../../assets/styles/textArc.css';
 import * as d3 from "d3";
 
 function TextArc() {
@@ -30,7 +31,7 @@ function TextArc() {
                 </linearGradient>
                 <path id="wavy" d="M 0,300, A 100,0 0 0,1 400,300" style={{fill: 'none', stroke: 'none'}}></path>
                 <text>
-                  <textPath href="#wavy" startOffset="50%" style={{textAnchor: "middle", fontSize: "64px", fill: "url(#linear-gradient)", filter: "drop-shadow(-2px 2px 3px rgba(0,0,0,0.7)"}}>
+                  <textPath href="#wavy" id="text-svg" startOffset="50%" style={{textAnchor: "middle", fill: "url(#linear-gradient)", filter: "drop-shadow(-2px 2px 3px rgba(0,0,0,0.7)"}}>
                       DÉFI-DELF
                   </textPath>
                 </text>

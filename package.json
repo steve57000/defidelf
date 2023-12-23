@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://steve57000.github.io/defidelf",
+  "homepage": "https://steve57000.github.io/defidelf/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

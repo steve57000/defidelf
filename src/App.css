@@ -3,19 +3,24 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 220px;
+  height: 220px;
   pointer-events: none;
+  position: absolute;
+  top: 200px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+      /*box-shadow: 1px 0 10px 1px darkslateblue;*/
+      border-radius: 50%;
+      animation: App-logo-up 4s ease-in-out, App-logo-spin infinite 20s linear, App-logo-drop infinite 4s ease-in-out;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /*background-color: #282c34;*/
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +33,15 @@
   color: #61dafb;
 }
 
+@keyframes App-logo-up {
+  from {
+    margin-top: 400px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +49,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes App-logo-drop {
+  from {
+    filter: drop-shadow( 1px 0 0 white);
+  }
+  20% {
+    filter: drop-shadow( 1px 0 0 #940303);
+  }
+  60% {
+    filter: drop-shadow( 1px 0 0 darkviolet);
+  }
+  80% {
+    filter: drop-shadow( 1px 0 0 #fffb00);
+  }
+  100% {
+      filter: drop-shadow( 1px 0 0 white);
+    }
 }

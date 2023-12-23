@@ -15,7 +15,7 @@ function Home() {
             <TextArc />
             <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <h1 id="title-logo">Apprendre le français pour s'insérer</h1>
+        <h1 id="title-logo">Apprendre le français pour s'intégrer</h1>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import '../../assets/styles/home.css';
 import TextArc from "../../Components/D3TextArc/TextArc";
 import logo from "../../logo1.png";
+import {NavLink} from "react-router-dom";
 
 
 function Home() {
@@ -16,6 +17,11 @@ function Home() {
             <img src={logo} className="App-logo" alt="logo" />
         </div>
         <h1 id="title-logo">Apprendre le français pour s'intégrer</h1>
+        <button id={"buttonAccueil"}>
+            <NavLink to={`/homePage`} className="LinkAccueil">
+               ENTRER
+            </NavLink>
+        </button>
     </div>
   );
 }

@@ -1,18 +1,81 @@
 #Home {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #title-logo {
     width: 100%;
     text-align: center;
-    font-size: 3em;
+    margin-bottom: 50px;
+    /*font-size: 2em;*/
     color: #df0a0a;
 }
 
+#buttonAccueil {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.7));
+    transition: all .3s ease-in;
+    background-color: grey;
+}
+
+#buttonAccueil:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(-8px 7px 3px rgba(0, 0, 0, 0.7));
+    animation: colorButton .4s ease-in;
+    background-color: #940303;
+    border-radius: 25px;
+}
+#buttonAccueil:focus {
+    transform: scale(1.2);
+    filter: drop-shadow(-8px 7px 3px rgba(0, 0, 0, 0.7));
+    animation: colorButton .4s ease-in;
+    background-color: #940303;
+    border-radius: 25px;
+    outline: none;
+}
+#buttonAccueil:hover > .LinkAccueil {
+    animation: colorButtonTxt .4s ease-in;
+    color: white;
+}
+#buttonAccueil:focus > .LinkAccueil {
+    animation: colorButtonTxt .4s ease-in;
+    color: white;
+}
+.LinkAccueil {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 @media (max-width: 600px){
-    #title-logo {
-        font-size: 2em;
+    /*#title-logo {*/
+    /*    font-size: 2em;*/
+    /*}*/
+}
+
+@keyframes colorButton {
+    from {
+        background-color: grey;
+        border-radius: 10px;
+    }
+    to {
+        background-color: #940303;
+        border-radius: 25px;
+    }
+}
+@keyframes colorButtonTxt {
+    from {
+        color: black;
+    }
+    to {
+        color: white;
     }
 }

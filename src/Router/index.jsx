@@ -30,7 +30,7 @@ function BasicLayout() {
 // }
 function App() {
   return (
-    <Router basename="defdelf">
+    <Router basename="defidelf">
       <Routes>
         <Route exact path="" element={<BasicLayout />} >
             <Route index element={<Home />} />

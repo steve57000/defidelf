@@ -1,3 +1,9 @@
 #text-svg {
     font-size: 65px;
 }
+
+@media (max-width: 600px){
+    #text-svg {
+        font-size: 60px;
+    }
+}

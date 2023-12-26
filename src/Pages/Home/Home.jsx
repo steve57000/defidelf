@@ -34,7 +34,7 @@ function Home() {
         <TitleHomePage id="title-logo">
           {isDisplayed &&
             <>
-              <TypeWritter text="Apprendre le français pour s'intégrer" delay={100}></TypeWritter>
+              <TypeWritter text="Apprendre le français pour s'intégrer" delay={100} ></TypeWritter>
             </>
           }
         </TitleHomePage>

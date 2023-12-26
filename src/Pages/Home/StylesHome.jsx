@@ -5,7 +5,8 @@ import {NavLink} from "react-router-dom";
 
 export const ContainerHome = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,14 +18,17 @@ export const ContainerLogo = styled.div`
   align-items: center;
   position: relative;
   width: 340px;
-  height: 440px;
-  overflow: hidden;
+  height: 500px;
+  overflowY: hidden;
 `
 export const TitleHomePage = styled.h1`
   width: 100%;
+  position: absolute;
+  top: 50%;
   text-align: center;
-  margin-bottom: 50px;
   color: #d31515;
+  font-weight: bold;
+  font-size: 3em;
 `
 export const LinkAccueil = styled(NavLink)`
   display: flex;
@@ -44,6 +48,7 @@ export const EnterButton = styled.button`
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.7));
   transition: all .3s ease-in;
   background-color: #ececec;
+  margin-top: 10%;
 
   &:hover {
     transform: scale(1.1);

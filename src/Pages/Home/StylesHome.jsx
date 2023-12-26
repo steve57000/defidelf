@@ -31,7 +31,7 @@ export const TitleHomePage = styled.h1`
   font-weight: bold;
   font-size: 3em;
   @media (max-width: 768px) {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 `
 export const LinkAccueil = styled(NavLink)`
@@ -52,8 +52,10 @@ export const EnterButton = styled.button`
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.7));
   transition: all .3s ease-in;
   background-color: #ececec;
-  margin-top: 20%;
-
+  margin-top: 10%;
+  @media (max-width: 768px){
+    margin-top: 20%;
+  }
   &:hover {
     transform: scale(1.1);
     filter: drop-shadow(-8px 7px 3px rgba(0, 0, 0, 0.7));

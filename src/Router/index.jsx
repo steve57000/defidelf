@@ -8,7 +8,7 @@ import {
 
 import Header from '../Layout/Header';
 // import VerticalNav from '../layout/VerticalNav';
-import Home from '../Pages/Home';
+import Home from '../Pages/Home/Home';
 import HomePage from "../Pages/HomePage/HomePage";
 // import ErrorPage from '../pages/ErrorPage';
 // import DashboardHome from "../pages/Dashboard";

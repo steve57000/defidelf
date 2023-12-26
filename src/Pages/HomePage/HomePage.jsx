@@ -1,18 +1,15 @@
 import React from 'react';
 
-import '../../assets/styles/home.css';
-import TextArc from "../../Components/D3TextArc/TextArc";
-import logo from "../../logo1.png";
-
+import {ContainerHomePage, TitleHomePage } from './StylesHomePage';
 
 function HomePage() {
     // State (état, données)
     // Comportement
     // affichage (render)
     return (
-        <div id="homePage">
-            <h1 id="title-logo">Page d'acceuil</h1>
-        </div>
+        <ContainerHomePage id="homePage">
+            <TitleHomePage id="title-logo">Page d'acceuil</TitleHomePage>
+        </ContainerHomePage>
     );
 }
 

@@ -17,12 +17,12 @@ function Home() {
   useEffect(() => {
     setInterval(() => {
       setIsDisplayed(true);
-    }, 4000);
+    }, 5000);
   }, []);
   useEffect(() => {
     setInterval(() => {
       setIsButtonDisplayed(true);
-    }, 8000);
+    }, 10000);
   }, []);
   // affichage (render)
   return (

@@ -1,36 +1,32 @@
 import {styled} from "styled-components";
 import { colorButton, colorButtonTxt} from "./KeyframHome"
 import {NavLink} from "react-router-dom";
-// import { NavLink } from "react-router-dom";
 
 export const ContainerHome = styled.div`
-  width: 100%;
-  height: 100%;
   max-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 100px;
 `
 export const ContainerLogo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-width: 400px;
-  width: 100%;
-  height: 450px;
+  height: 300px;
   overflow: hidden;
+  border-radius: 0 0 50% 50%;
 `
 export const TitleHomePage = styled.h1`
-  width: 100%;
   position: absolute;
   top: 50%;
   text-align: center;
   color: #d31515;
   font-weight: bold;
   font-size: 3em;
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     font-size: 1.7em;
   }
 `
@@ -50,12 +46,11 @@ export const EnterButton = styled.button`
   border-radius: 10px;
   border: none;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.7));
-  transition: all .3s ease-in;
-  background-color: #ececec;
-  margin-top: 10%;
-  @media (max-width: 768px){
-    margin-top: 20%;
-  }
+  transition: all .3s ease-in-out;
+  background-color: #ffffff;
+  position: absolute;
+  top: 70%;
+
   &:hover {
     transform: scale(1.1);
     filter: drop-shadow(-8px 7px 3px rgba(0, 0, 0, 0.7));

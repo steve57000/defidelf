@@ -4,7 +4,6 @@ export const ContainerHomePage = styled.div`
   width: 100%;
 `
 export const TitleHomePage = styled.h1`
-  width: 100%;
   text-align: center;
   margin-bottom: 50px;
 `

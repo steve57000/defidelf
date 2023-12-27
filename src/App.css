@@ -7,7 +7,7 @@
   height: auto;
   pointer-events: none;
   position: absolute;
-  top: 200px;
+  top: 70px;
 }
 @media (max-width: 768px) {
   .App-logo{
@@ -16,9 +16,10 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-      /*box-shadow: 1px 0 10px 1px darkslateblue;*/
+      box-shadow: 0 0 15px 0 rgba(102, 101, 101, 0.22);
       border-radius: 50%;
-      animation: App-logo-up 4s ease-in-out, App-logo-spin infinite 20s linear, App-logo-drop infinite 4s ease-in-out;
+      filter: drop-shadow( 1px 0 0 #940303);
+      animation: App-logo-up 4.8s ease-in-out, App-logo-spin infinite 20s 4000ms linear; /* App-logo-drop infinite 5s ease-in-out */
   }
 }
 
@@ -39,7 +40,7 @@
 
 @keyframes App-logo-up {
   from {
-    margin-top: 400px;
+    margin-top: 480px;
   }
   to {
     margin-top: 0;
@@ -55,20 +56,20 @@
   }
 }
 
-@keyframes App-logo-drop {
-  from {
-    filter: drop-shadow( 1px 0 0 white);
-  }
-  20% {
-    filter: drop-shadow( 1px 0 0 #940303);
-  }
-  60% {
-    filter: drop-shadow( 1px 0 0 darkviolet);
-  }
-  80% {
-    filter: drop-shadow( 1px 0 0 #fffb00);
-  }
-  100% {
-      filter: drop-shadow( 1px 0 0 white);
-    }
-}
+/*@keyframes App-logo-drop {*/
+/*  from {*/
+/*    filter: drop-shadow( 1px 0 0 white);*/
+/*  }*/
+/*  20% {*/
+/*    filter: drop-shadow( 1px 0 0 #940303);*/
+/*  }*/
+/*  60% {*/
+/*    filter: drop-shadow( 1px 0 0 darkviolet);*/
+/*  }*/
+/*  80% {*/
+/*    filter: drop-shadow( 1px 0 0 #fffb00);*/
+/*  }*/
+/*  100% {*/
+/*      filter: drop-shadow( 1px 0 0 white);*/
+/*    }*/
+/*}*/

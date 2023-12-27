@@ -2,9 +2,11 @@
   font-family: myFirstFont;
   src: url(./assets/fonts/Alice-Regular.ttf);
 }
-
+/**{*/
+/*  border: 1px solid red;*/
+/*}*/
 html {
-  font-size: 100%;
+  margin: 0;
 }
 body {
   margin: 0 auto;
@@ -14,7 +16,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 0.75em;
   max-width: 1420px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 h1{

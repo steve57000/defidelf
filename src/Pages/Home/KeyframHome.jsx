@@ -2,10 +2,12 @@ import {keyframes} from "styled-components";
 
 export const colorButton = keyframes`
   from {
+    opacity: 0;
     background-color: #ececec;
     border-radius: 10px;
   }
   to {
+    opacity: 1;
     background-color: #940303;
     border-radius: 25px;
   }

@@ -35,7 +35,7 @@ export const ContainerLogo = styled.div`
 `
 export const TitleHomePage = styled.h1`
   position: absolute;
-  top: 50%;
+  top: 45%;
   text-align: center;
   color: #d31515;
   font-weight: bold;

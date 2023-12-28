@@ -59,6 +59,8 @@ export const EnterButton = styled.button`
   font-weight: bold;
   color: #5b5a5a;
 `
+
+
 export const LinkAccueil = styled(NavLink)`
   position: absolute;
   width: 180px;
@@ -70,7 +72,8 @@ export const LinkAccueil = styled(NavLink)`
   transition: all .4s ease-in;
   background-color: #ffffff;
   top: 70%;
-  &:hover {
+
+  &:active {
     transform: scale(1.2);
     //width: 250px;
     //height: 60px;
@@ -91,25 +94,38 @@ export const LinkAccueil = styled(NavLink)`
     outline: none;
   }
 
-  &:hover > ${EnterButton}  {
+  &:hover {
+    transform: scale(1.2);
+    //width: 250px;
+    //height: 60px;
+    filter: drop-shadow(-8px 7px 3px rgba(0, 0, 0, 0.7));
+    animation: ${colorButton} .4s ease-in;
+    background-color: #940303;
+    border-radius: 25px;
+  }
+
+  &:active > ${EnterButton} {
     animation: ${colorButtonTxt} .3s ease-in;
     color: white;
-    //font-size: 1.5em;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     filter: drop-shadow(-2px 1px 1px rgba(0, 0, 0, 1));
-  }
 
   &:focus > ${EnterButton} {
     animation: ${colorButtonTxt} .3s ease-in;
     color: white;
-    //font-size: 1.5em;
     letter-spacing: 2px;
+    filter: drop-shadow(-2px 1px 1px rgba(0, 0, 0, 1));
+
+  &:hover > ${EnterButton}  {
+    animation: ${colorButtonTxt} .3s ease-in;
+    color: white;
+    letter-spacing: 4px;
+    filter: drop-shadow(-2px 1px 1px rgba(0, 0, 0, 1));
+  }
 
   @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
     top: 60%;
     left: 50%;
   }
 `
-
-
 

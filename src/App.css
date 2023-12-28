@@ -3,20 +3,16 @@
 }
 
 .App-logo {
-  width: 220px;
-  height: auto;
+  width: 200px;
+  height: 200px;
   pointer-events: none;
   position: absolute;
-  top: 70px;
+  top: 25%;
 }
-@media (max-width: 768px) {
-  .App-logo{
-    width: 200px;
-  }
-}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-      box-shadow: 0 0 15px 0 rgba(102, 101, 101, 0.22);
+      box-shadow: 0 0 10px 0 rgba(123, 123, 123, 0.22);
       border-radius: 50%;
       filter: drop-shadow( 1px 0 0 #940303);
       animation: App-logo-up 4.8s ease-in-out, App-logo-spin infinite 20s 4000ms linear; /* App-logo-drop infinite 5s ease-in-out */
@@ -40,7 +36,7 @@
 
 @keyframes App-logo-up {
   from {
-    margin-top: 480px;
+    margin-top: 300px;
   }
   to {
     margin-top: 0;

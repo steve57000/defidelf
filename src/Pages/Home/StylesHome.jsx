@@ -3,21 +3,34 @@ import { colorButton, colorButtonTxt} from "./KeyframHome"
 import {NavLink} from "react-router-dom";
 
 export const ContainerHome = styled.div`
-  max-height: 100vh;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  position: relative;
+  @media screen and (orientation:landscape) {
+    align-items: flex-start;
+  }
 `
 export const ContainerLogo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 320px;
   height: 300px;
   overflow: hidden;
   border-radius: 0 0 50% 50%;
+
+  @media screen and (orientation:landscape) {
+    align-items: flex-start;
+    padding: 10px;
+
+    .App-logo {
+      left: 13.5%;
+    }
+  }
 `
 export const TitleHomePage = styled.h1`
   position: absolute;
@@ -28,6 +41,11 @@ export const TitleHomePage = styled.h1`
   font-size: 3em;
   @media (max-width: 720px) {
     font-size: 1.7em;
+  }
+  @media screen and (orientation:landscape) {
+    font-size: 2em;
+    top: 35%;
+    left: 40%;
   }
 `
 export const LinkAccueil = styled(NavLink)`
@@ -76,6 +94,10 @@ export const EnterButton = styled.button`
   &:focus > ${LinkAccueil} {
     animation: ${colorButtonTxt} .4s ease-in;
     color: white;
+  }
+  @media screen and (orientation:landscape) {
+    top: 60%;
+    left: 50%;
   }
 `
 

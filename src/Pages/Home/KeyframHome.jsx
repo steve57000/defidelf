@@ -3,7 +3,7 @@ import {keyframes} from "styled-components";
 export const colorButton = keyframes`
   from {
     opacity: 0;
-    background-color: #ececec;
+    background-color:  #ffffff;
     border-radius: 10px;
   }
   to {

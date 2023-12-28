@@ -3,11 +3,12 @@ import { colorButton, colorButtonTxt} from "./KeyframHome"
 import {NavLink} from "react-router-dom";
 
 export const ContainerHome = styled.div`
-  width: 95vw;
+  width: 98vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   position: relative;
   padding-top: 50px;
   @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {

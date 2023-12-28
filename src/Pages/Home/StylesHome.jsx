@@ -12,6 +12,7 @@ export const ContainerHome = styled.div`
   padding-top: 50px;
   @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
     align-items: flex-start;
+    padding-top: 20px;
   }
 `
 export const ContainerLogo = styled.div`
@@ -19,17 +20,16 @@ export const ContainerLogo = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 360px;
+  width: 320px;
   height: 300px;
   overflow: hidden;
   border-radius: 0 0 50% 50%;
 
   @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
     align-items: flex-start;
-    padding: 10px;
 
     .App-logo {
-      left: 13.5%;
+      left: 17.8%;
     }
   }
 `

@@ -9,6 +9,7 @@ export const ContainerHome = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-top: 50px;
   @media screen and (orientation:landscape) {
     align-items: flex-start;
   }
@@ -40,7 +41,7 @@ export const TitleHomePage = styled.h1`
   font-weight: bold;
   font-size: 3em;
   @media (max-width: 720px) {
-    font-size: 1.7em;
+    font-size: 1.6em;
   }
   @media screen and (orientation:landscape) {
     font-size: 2em;

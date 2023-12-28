@@ -19,7 +19,7 @@ export const ContainerLogo = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 320px;
+  width: 360px;
   height: 300px;
   overflow: hidden;
   border-radius: 0 0 50% 50%;

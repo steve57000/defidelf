@@ -72,7 +72,10 @@ export const LinkAccueil = styled(NavLink)`
   transition: all .4s ease-in;
   background-color: #ffffff;
   top: 70%;
-
+  @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
+    top: 60%;
+    left: 50%;
+  }
   &:active {
     transform: scale(1.2);
     //width: 250px;
@@ -123,9 +126,5 @@ export const LinkAccueil = styled(NavLink)`
     filter: drop-shadow(-2px 1px 1px rgba(0, 0, 0, 1));
   }
 
-  @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
-    top: 60%;
-    left: 50%;
-  }
 `
 

@@ -41,11 +41,12 @@ function Home() {
 
         {isButtonDisplayed &&
           <>
-            <EnterButton id="buttonAccueils">
               <LinkAccueil to={`/homePage`} >
-                ENTRER
+                  <EnterButton id="buttonAccueils">
+                      ENTRER
+                  </EnterButton>
               </LinkAccueil>
-            </EnterButton>
+
           </>
         }
     </ContainerHome>

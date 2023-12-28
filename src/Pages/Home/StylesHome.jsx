@@ -49,57 +49,66 @@ export const TitleHomePage = styled.h1`
     left: 40%;
   }
 `
-export const LinkAccueil = styled(NavLink)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+export const EnterButton = styled.button`
   width: 100%;
   height: 100%;
-  text-decoration: none;
-  color: #5b5a5a;
+  background-color: transparent;
+  border: none;
   font-weight: bold;
+  color: #5b5a5a;
 `
-export const EnterButton = styled.button`
-  width: 200px;
+export const LinkAccueil = styled(NavLink)`
+  position: absolute;
+  width: 180px;
   height: 50px;
+  text-decoration: none;
   border-radius: 10px;
   border: none;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.7));
-  transition: all .3s ease-in-out;
+  transition: all .4s ease-in;
   background-color: #ffffff;
-  position: absolute;
   top: 70%;
-
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    //width: 250px;
+    //height: 60px;
     filter: drop-shadow(-8px 7px 3px rgba(0, 0, 0, 0.7));
-    animation: ${colorButton} .3s ease-in;
+    animation: ${colorButton} .4s ease-in;
     background-color: #940303;
     border-radius: 25px;
   }
 
   &:focus {
-    transform: scale(1.2);
-    filter: drop-shadow(-8px 7px 3px rgba(0, 0, 0, 0.7));
-    animation: ${colorButton} .3s ease-in;
+    //transform: scale(1.2);
+    width: 250px;
+    height: 60px;
+    filter: drop-shadow(-8px 7px 3px rgba(0, 0, 0, 0.4));
+    animation: ${colorButton} .4s ease-in;
     background-color: #940303;
     border-radius: 25px;
     outline: none;
   }
 
-  &:hover > ${LinkAccueil} {
-    animation: ${colorButtonTxt} .4s ease-in;
+  &:hover > ${EnterButton}  {
+    animation: ${colorButtonTxt} .3s ease-in;
     color: white;
+    //font-size: 1.5em;
+    letter-spacing: 4px;
+    filter: drop-shadow(-2px 1px 1px rgba(0, 0, 0, 1));
   }
 
-  &:focus > ${LinkAccueil} {
-    animation: ${colorButtonTxt} .4s ease-in;
+  &:focus > ${EnterButton} {
+    animation: ${colorButtonTxt} .3s ease-in;
     color: white;
-  }
+    //font-size: 1.5em;
+    letter-spacing: 2px;
+
   @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
     top: 60%;
     left: 50%;
   }
 `
+
 
 

@@ -16,7 +16,7 @@ function TextArc() {
 //Transition from the original arc path to a new arc path
         svg.selectAll("path")
         .transition().duration(4000).delay(1000)
-        .attr("d", "M 45,170 A 90,90 0 0,1 275,170");
+        .attr("d", "M 55,120 A 110,110 0 0,1 260,120");
     }, []);
 
 // affichage (render)

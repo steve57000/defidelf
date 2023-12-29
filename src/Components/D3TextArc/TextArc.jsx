@@ -6,8 +6,8 @@ function TextArc() {
     const svgRef = useRef(null);
     // Comportement
     useEffect(() => {
-        const width = 260
-        const height = 260
+        const width = "100%"
+        const height = "100%"
         //Create the SVG
         const svg = d3.select(svgRef.current)
         .attr('width', width)
@@ -16,26 +16,29 @@ function TextArc() {
 //Transition from the original arc path to a new arc path
         svg.selectAll("path")
         .transition().duration(4000).delay(1000)
-        .attr("d", "M 25,150 A 100,100 0 0,1 235,150");
+        .attr("d", "M 45,170 A 90,90 0 0,1 275,170");
     }, []);
 
 // affichage (render)
     return (
+        <div style={{width: "320px", height: "300px"}}>
             <svg ref={svgRef}>
-              <g>
-                <linearGradient id="linear-gradient">
-                <stop offset="0%" stopColor="#0240f9" stopOpacity="100%" />
-                <stop offset="30%" stopColor="#0b0979" stopOpacity="100%" />
-                <stop offset="100%" stopColor="#ff0000" stopOpacity="100%" />
-                </linearGradient>
-                <path id="wavy" d="M 0,150, A 100,0 0 0,1 260,150" style={{fill: 'none', stroke: 'none'}}></path>
-                <text>
-                  <textPath href="#wavy" id="text-svg" startOffset="50%" style={{textAnchor: "middle", fill: "url(#linear-gradient)", filter: "drop-shadow(-2px 0 1px rgba(0,0,0,0.8)" , fontSize: '3.5em'}}>
-                      DÉFI-DELF
-                  </textPath>
-                </text>
-              </g>
+                <g>
+                    <linearGradient id="linear-gradient">
+                        <stop offset="0%" stopColor="#0240f9" stopOpacity="100%" />
+                        <stop offset="30%" stopColor="#0b0979" stopOpacity="100%" />
+                        <stop offset="100%" stopColor="#ff0000" stopOpacity="100%" />
+                    </linearGradient>
+                    <path id="wavy" d="M 0,150, A 100,0 0 0,1 320,150" style={{fill: 'none', stroke: 'none'}}></path>
+                    <text>
+                        <textPath href="#wavy" id="text-svg" startOffset="50%" style={{textAnchor: "middle", fill: "url(#linear-gradient)", filter: "drop-shadow(-2px 0 1px rgba(0,0,0,0.8)" , fontSize: '3.5em'}}>
+                            DÉFI-DELF
+                        </textPath>
+                    </text>
+                </g>
             </svg>
+        </div>
+
     );
 }
 

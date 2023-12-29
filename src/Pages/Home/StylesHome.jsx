@@ -28,7 +28,7 @@ export const ContainerLogo = styled.div`
     align-items: flex-start;
 
     .App-logo {
-      left: 8.9%;
+      left: 17.7%;
     }
   }
 `

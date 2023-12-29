@@ -22,15 +22,13 @@ export const ContainerLogo = styled.div`
   align-items: center;
   position: relative;
   width: 320px;
-  height: 300px;
   overflow-y: hidden;
   border-radius: 0 0 50% 50%;
-
   @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
     align-items: flex-start;
 
     .App-logo {
-      left: 18.2%;
+      left: 8.9%;
     }
   }
 `

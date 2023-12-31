@@ -58,7 +58,6 @@ export const EnterButton = styled.button`
   color: #5b5a5a;
 `
 
-
 export const LinkAccueil = styled(NavLink)`
   position: absolute;
   width: 180px;
@@ -85,9 +84,7 @@ export const LinkAccueil = styled(NavLink)`
     box-shadow: -6px 6px 5px rgb(127 122 122 / 42%);
   }
   &:hover > ${EnterButton}  {
-    //animation: ${colorButtonTxt} .3s ease-in;
     color: white;
-
   }
 
 `

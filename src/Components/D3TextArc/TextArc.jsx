@@ -13,6 +13,7 @@ function TextArc() {
         .attr('width', width)
         .attr('height', height)
         .attr('overflow', 'visible')
+        .attr('display', 'block')
 
 //Transition from the original arc path to a new arc path
         svg.selectAll("path")

@@ -74,22 +74,20 @@ export const LinkAccueil = styled(NavLink)`
     top: 60%;
     left: 50%;
   }
-
   &:hover {
     transform: scale(1.2);
-    //width: 250px;
-    //height: 60px;
-    filter: drop-shadow(-8px 7px 3px rgba(0, 0, 0, 0.7));
     animation: ${colorButton} .4s ease-in;
-    background-color: #940303;
     border-radius: 25px;
+    background: -moz-linear-gradient(90deg, rgba(218,234,212,1) 0%, rgba(178,218,235,1) 50%, rgba(172,179,213,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(218,234,212,1) 0%, rgba(178,218,235,1) 50%, rgba(172,179,213,1) 100%);
+    background: linear-gradient(90deg, rgba(218,234,212,1) 0%, rgba(178,218,235,1) 50%, rgba(172,179,213,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daead4",endColorstr="#acb3d5",GradientType=1);
+    box-shadow: -6px 6px 5px rgb(127 122 122 / 42%);
   }
-
   &:hover > ${EnterButton}  {
-    animation: ${colorButtonTxt} .3s ease-in;
+    //animation: ${colorButtonTxt} .3s ease-in;
     color: white;
-    letter-spacing: 4px;
-    filter: drop-shadow(-2px 1px 1px rgba(0, 0, 0, 1));
+
   }
 
 `

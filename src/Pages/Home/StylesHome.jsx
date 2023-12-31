@@ -75,7 +75,7 @@ export const LinkAccueil = styled(NavLink)`
   }
   &:hover {
     transform: scale(1.2);
-    animation: ${colorButton} .4s ease-in;
+    animation: ${colorButton} .3s ease-in;
     border-radius: 25px;
     background: -moz-linear-gradient(90deg, rgba(218,234,212,1) 0%, rgba(178,218,235,1) 50%, rgba(172,179,213,1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(218,234,212,1) 0%, rgba(178,218,235,1) 50%, rgba(172,179,213,1) 100%);

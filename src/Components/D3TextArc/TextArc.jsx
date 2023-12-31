@@ -32,7 +32,7 @@ function TextArc() {
                         <stop offset="30%" stopColor="#0b0979" stopOpacity="100%" />
                         <stop offset="100%" stopColor="#ff0000" stopOpacity="100%" />
                     </linearGradient>
-                    <path id="wavy" d="M -20,200, A 100,0 0 0,1 220,200" style={{fill: 'none', stroke: 'blue', fontSize: '3.5em'}}></path>
+                    <path id="wavy" d="M -20,200, A 100,0 0 0,1 220,200" style={{fill: 'none', stroke: 'none', fontSize: '3.5em'}}></path>
                     <text>
                         <textPath href="#wavy" id="text-svg" startOffset="50%" style={{textAnchor: "middle", fill: "url(#linear-gradient)", filter: "drop-shadow(-2px 0 1px rgba(0,0,0,0.8)" , fontSize: '3.5em', padding: '10px'}}>
                             DÉFI-DELF

@@ -23,7 +23,7 @@ function TextArc() {
 
 // affichage (render)
     return (
-        <svg ref={svgRef}>
+        <svg ref={svgRef} viewBox="0 0 300 200">
             <g>
                 <linearGradient id="linear-gradient">
                     <stop offset="0%" stopColor="#0240f9" stopOpacity="100%" />

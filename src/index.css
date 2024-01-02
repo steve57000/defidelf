@@ -24,6 +24,10 @@ h1{
 
 }
 code {
-  font-family: myFirstFont,
-    monospace;
+  font-family: myFirstFont, monospace;
+}
+
+svg text {
+  font-family: myFirstFont, monospace;
+  font-size: 3.5em;
 }

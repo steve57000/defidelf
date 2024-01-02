@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/defidelf/static/css/main.b531caad.css",
-    "main.js": "/defidelf/static/js/main.48dbbad4.js",
+    "main.js": "/defidelf/static/js/main.0bdccddf.js",
     "static/js/787.9e9f4ffd.chunk.js": "/defidelf/static/js/787.9e9f4ffd.chunk.js",
     "static/media/Alice-Regular.ttf": "/defidelf/static/media/Alice-Regular.6676c30016104188a3ec.ttf",
     "static/media/logo.png": "/defidelf/static/media/logo.f684fa265fec75fa21ab.png",
     "static/media/logo1.png": "/defidelf/static/media/logo1.6477d6ae48c2d3b518f9.png",
     "index.html": "/defidelf/index.html",
     "main.b531caad.css.map": "/defidelf/static/css/main.b531caad.css.map",
-    "main.48dbbad4.js.map": "/defidelf/static/js/main.48dbbad4.js.map",
+    "main.0bdccddf.js.map": "/defidelf/static/js/main.0bdccddf.js.map",
     "787.9e9f4ffd.chunk.js.map": "/defidelf/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b531caad.css",
-    "static/js/main.48dbbad4.js"
+    "static/js/main.0bdccddf.js"
   ]
 }

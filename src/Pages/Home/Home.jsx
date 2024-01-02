@@ -27,7 +27,7 @@ function Home() {
   // affichage (render)
   return (
     <ContainerHome id="Home">
-        <ContainerLogo id='logo'>
+        <ContainerLogo>
             <TextArc />
             <img src={logo} className="App-logo" alt="logo" />
         </ContainerLogo>

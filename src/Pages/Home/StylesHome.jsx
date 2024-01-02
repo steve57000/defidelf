@@ -1,6 +1,6 @@
-import {styled} from "styled-components";
-import { colorButton} from "./KeyframHome"
-import {NavLink} from "react-router-dom";
+import { styled } from "styled-components";
+import { colorButton } from "./KeyframHome"
+import { NavLink } from "react-router-dom";
 
 export const ContainerHome = styled.div`
   width: 98vw;

@@ -28,7 +28,7 @@ function Home() {
   return (
     <ContainerHome id="Home">
         <ContainerLogo>
-            <TextArc />
+            <TextArc width="220px"/>
             <img src={logo} className="App-logo" alt="logo" />
         </ContainerLogo>
         <TitleHomePage id="title-logo">

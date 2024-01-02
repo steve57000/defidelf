@@ -24,15 +24,15 @@ function TextArc() {
 // affichage (render)
     return (
         <svg ref={svgRef}>
-            <g style={{textAnchor: "middle", fill: "url(#linear-gradient)", stroke: "transparent", filter: "drop-shadow(-2px 0 1px #000000cc)" , fontSize: '3.5em'}}>
+            <g>
                 <linearGradient id="linear-gradient">
                     <stop offset="0%" stopColor="#0240f9" stopOpacity="100%" />
                     <stop offset="30%" stopColor="#0b0979" stopOpacity="100%" />
                     <stop offset="100%" stopColor="#ff0000" stopOpacity="100%" />
                 </linearGradient>
                 <path id="wavy" d="M 0,180, A 100,0 0 0,1 300,180" style={{fill: "transparent", stroke: "transparent"}}></path>
-                <text>
-                    <textPath href="#wavy" id="text-svg" startOffset="50%" >DÉFI-DELF </textPath>
+                <text textLength="220" lengthAdjust="spacing" style={{textAnchor: "middle", fill: "url(#linear-gradient)", stroke: "transparent", filter: "drop-shadow(-2px 0 1px #000000cc)" , fontSize: '3.5em'}}>
+                    <textPath href="#wavy" id="text-svg" startOffset="50%" spacing="exact">DÉFI-DELF </textPath>
                 </text>
             </g>
         </svg>

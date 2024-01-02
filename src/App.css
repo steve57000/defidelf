@@ -15,7 +15,7 @@
     box-shadow: inset 0 0 20px 1px rgba(113, 111, 18, 0.6);
     border-radius: 50%;
     filter: drop-shadow( 1px 0 0 #940303);
-    animation: App-logo-up 4.8s ease-in-out, App-logo-spin infinite 20s 5000ms linear, App-logo-drop infinite 20s 5000ms ease-in-out; /*  */
+    animation: App-logo-up 4.8s ease-in-out, App-logo-spin infinite 20s 5000ms linear, App-logo-drop infinite 20s 5000ms ease-in-out;
   }
 }
 

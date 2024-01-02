@@ -18,7 +18,7 @@ function TextArc() {
 //Transition from the original arc path to a new arc path
         svg.selectAll("path")
         .transition().duration(4000).delay(1000)
-        .attr("d", "M 0,200 A80,80 0 0,1 300,200");
+        .attr("d", "M 20,200 A60,70 0 0,1 280,200");
     }, []);
 
 // affichage (render)
@@ -31,8 +31,8 @@ function TextArc() {
                     <stop offset="100%" stopColor="#ff0000" stopOpacity="100%" />
                 </linearGradient>
                 <path id="wavy" d="M 0,180, A 100,0 0 0,1 300,180" style={{fill: "transparent", stroke: "transparent"}}></path>
-                <text style={{whiteSpace: "pre"}}>
-                    <textPath href="#wavy" startOffset="50%" style={{whiteSpace: "pre"}}>DÉFI-DELF </textPath>
+                <text>
+                    <textPath href="#wavy" startOffset="50%" style={{whiteSpace: "pre"}}> DÉFI-DELF </textPath>
                 </text>
             </g>
         </svg>

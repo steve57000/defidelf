@@ -30,4 +30,8 @@ code {
 svg text {
   font-family: myFirstFont, monospace;
   font-size: 3.5em;
+  text-anchor: middle;
+  fill: url(#linear-gradient);
+  stroke: transparent;
+  filter: drop-shadow(-2px 0 1px #000000cc)
 }

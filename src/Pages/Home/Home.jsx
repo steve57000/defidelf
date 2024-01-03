@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import '../../assets/styles/home.css';
-import {ContainerHome, ContainerLogo, EnterButton, LinkAccueil, TitleHomePage} from "./StylesHome"
+import {ContainerHome, ContainerLogo, LinkAccueil, TitleHomePage} from "./StylesHome"
 import TextArc from "../../Components/D3TextArc/TextArc";
 import logo from "../../logo1.png";
 
@@ -38,7 +38,7 @@ function Home() {
         </TitleHomePage>
         {isButtonDisplayed &&
             <>
-                <LinkAccueil to={`/homePage`} >ENTRER</LinkAccueil>
+                <LinkAccueil to={`/homePage`} >Bienvenue !</LinkAccueil>
             </>
         }
     </ContainerHome>

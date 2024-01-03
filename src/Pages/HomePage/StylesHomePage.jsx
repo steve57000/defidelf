@@ -2,6 +2,14 @@ import { styled } from "styled-components";
 // import { NavLink } from "react-router-dom";
 export const ContainerHomePage = styled.div`
   width: 100%;
+  padding: 50px;
+  p{
+    font-size: 120%;
+  }
+  .TxtBlue{
+    color: blue;
+    font-weight: bold;
+  }
 `
 export const TitleHomePage = styled.h1`
   text-align: center;

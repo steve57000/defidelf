@@ -7,8 +7,6 @@ import logo from "../../logo1.png";
 
 import TypeWritter from "../../Components/TypeWritter/TypeWritter";
 
-
-
 function Home() {
   // State (état, données)
   const [isDisplayed, setIsDisplayed] = useState(false);
@@ -40,12 +38,7 @@ function Home() {
         </TitleHomePage>
         {isButtonDisplayed &&
             <>
-                <LinkAccueil to={`/homePage`} >
-                    <EnterButton id="buttonAccueils">
-                        ENTRER
-                    </EnterButton>
-                </LinkAccueil>
-
+                <LinkAccueil to={`/homePage`} >ENTRER</LinkAccueil>
             </>
         }
     </ContainerHome>

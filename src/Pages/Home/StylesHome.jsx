@@ -48,43 +48,41 @@ export const TitleHomePage = styled.h1`
   }
 `
 
-export const EnterButton = styled.button`
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border: none;
-  font-weight: bold;
-  color: #5b5a5a;
-`
-
 export const LinkAccueil = styled(NavLink)`
   position: absolute;
   width: 180px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   border-radius: 10px;
   border: none;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.7));
-  transition: all .4s ease-in;
-  background-color: #ffffff;
+  font-size: 110%;
+  font-weight: bold;
+  color: #344597;
+  transition: all .3s ease-in;
+  background: -moz-linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
+  background: linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
   top: 70%;
-  @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
+  @media screen and (min-width: 320px) and (max-width: 820px) and (orientation: landscape) {
     top: 60%;
     left: 50%;
   }
+
   &:hover {
     transform: scale(1.2);
-    animation: ${colorButton} .3s ease-in;
-    border-radius: 25px;
-    background: -moz-linear-gradient(90deg, rgba(218,234,212,1) 0%, rgba(178,218,235,1) 50%, rgba(172,179,213,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(218,234,212,1) 0%, rgba(178,218,235,1) 50%, rgba(172,179,213,1) 100%);
-    background: linear-gradient(90deg, rgba(218,234,212,1) 0%, rgba(178,218,235,1) 50%, rgba(172,179,213,1) 100%);
+    font-size: 120%;
+    background: -moz-linear-gradient(90deg, rgba(218, 234, 212, 1) 0%, rgba(178, 218, 235, 1) 50%, rgba(172, 179, 213, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(218, 234, 212, 1) 0%, rgba(178, 218, 235, 1) 50%, rgba(172, 179, 213, 1) 100%);
+    background: linear-gradient(90deg, rgba(218, 234, 212, 1) 0%, rgba(178, 218, 235, 1) 50%, rgba(172, 179, 213, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daead4",endColorstr="#acb3d5",GradientType=1);
     box-shadow: -6px 6px 5px rgb(127 122 122 / 42%);
+    text-shadow: -2px 1px 2px rgba(162, 162, 162, 0.85);
+    border-radius: 25px;
+    color: #102394;
+    letter-spacing: 4px;
   }
-  &:hover > ${EnterButton}  {
-    color: white;
-  }
-
 `
 

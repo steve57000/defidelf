@@ -23,7 +23,7 @@ function TextArc() {
 
 // affichage (render)
     return (
-        <svg ref={svgRef} style={{ fontSize: "1.2em",fontWeight: "bold", whiteSpace: "pre"}}>
+        <svg ref={svgRef} style={{ fontSize: "1.2em",fontWeight: "bold"}}>
             <g>
                 <linearGradient id="linear-gradient">
                     <stop offset="0%" stopColor="#0240f9" stopOpacity="100%" />
@@ -31,8 +31,8 @@ function TextArc() {
                     <stop offset="100%" stopColor="#ff0000" stopOpacity="100%" />
                 </linearGradient>
                 <path id="wavy" d="M 0,140, A10,0 0 0,1 150,140" style={{fill: "none", stroke: "none"}}></path>
-                <text >
-                    <textPath href="#wavy" startOffset="50%" > DÉFI-DELF </textPath>
+                <text>
+                    <textPath href="#wavy" startOffset="50%" style={{whiteSpace: "pre"}}> DÉFI-DELF </textPath>
                 </text>
             </g>
         </svg>

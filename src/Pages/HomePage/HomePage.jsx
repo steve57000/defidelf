@@ -1,14 +1,17 @@
 import React from 'react';
-
-import {ContainerHomePage, TitleHomePage } from './StylesHomePage';
+import {ContainerHome, TitleHomePage } from './StylesHomePage';
+import {LinkAccueil} from "../Home/StylesHome";
 
 function HomePage() {
     // State (état, données)
     // Comportement
     // affichage (render)
     return (
-        <ContainerHomePage id="homePage">
-            <TitleHomePage id="title-logo">Apprendre le français pour s'intégrer</TitleHomePage>
+
+
+        <ContainerHome >
+            <LinkAccueil to={`/`} >Accueil !</LinkAccueil>
+            <TitleHomePage id="title-logo">À propos de <span className="TxtBlue">Défi-Delf</span></TitleHomePage>
             <p>L'association <span className="TxtBlue">Défi-Delf</span> vous propose une formation à l'apprentissage du français et à la préparation aux examens du Delf</p>
             <p>Niveaux A1, A2, B1 et B2</p>
             <p>
@@ -35,7 +38,7 @@ function HomePage() {
                 La première « promotion » de Défi Delf se réunit ce 29 juin autour des 14 premiers lauréats à avoir décroché le DELF (8 A2 et  6 B1). <br/>
                 « 100% de réussite qui ne sont pas seulement dus aux formateurs de Défi Delf mais, aussi aux efforts de chacun - et de tous ceux qui les ont déjà accompagnés depuis le début de leur apprentissage du français. <br/>
             </p>
-        </ContainerHomePage>
+        </ContainerHome>
     );
 }
 

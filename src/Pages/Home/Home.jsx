@@ -25,22 +25,8 @@ function Home() {
   // affichage (render)
   return (
     <ContainerHome id="Home">
-        <ContainerLogo>
-            <TextArc width="220px"/>
-            <img src={logo} className="App-logo" alt="logo" />
-        </ContainerLogo>
-        <TitleHomePage id="title-logo">
-          {isDisplayed &&
-            <>
-              <TypeWritter text="Apprendre le français pour s'intégrer" delay={100} ></TypeWritter>
-            </>
-          }
-        </TitleHomePage>
-        {isButtonDisplayed &&
-            <>
-                <LinkAccueil to={`/homePage`} >Bienvenue !</LinkAccueil>
-            </>
-        }
+        <LinkAccueil to={`/homePage`} >À propos !</LinkAccueil>
+        <h2 style={{marginTop: "40px"}}>Bienvenue sur la page d'accueil</h2>
     </ContainerHome>
   );
 }

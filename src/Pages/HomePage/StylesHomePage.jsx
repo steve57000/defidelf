@@ -1,8 +1,18 @@
 import { styled } from "styled-components";
 // import { NavLink } from "react-router-dom";
-export const ContainerHomePage = styled.div`
-  width: 100%;
-  padding: 50px;
+export const ContainerHome = styled.div`
+  width: 98vw;
+  height: 100vh;
+  padding: 10% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
   p{
     font-size: 120%;
   }

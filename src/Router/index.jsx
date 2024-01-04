@@ -15,15 +15,8 @@ import HomePage from "../Pages/HomePage/HomePage";
 function BasicLayout() {
   return (
     <>
-      <Outlet />
-    </>
-  );
-}
-function HomeLayout() {
-  return (
-    <>
       <Header />
-        <Outlet />
+      <Outlet />
     </>
   );
 }
@@ -31,11 +24,9 @@ function App() {
   return (
     <Router basename="defidelf">
       <Routes>
-        <Route exact path="" element={<BasicLayout />} >
+        <Route exact path="/" element={<BasicLayout />} >
             <Route index element={<Home />} />
-            <Route path="homePage" element={<HomeLayout />} >
-                <Route index element={<HomePage />} ></Route>
-            </Route>
+            <Route path="/homePage" element={<HomePage />} />
         </Route>
       </Routes>
     </Router>

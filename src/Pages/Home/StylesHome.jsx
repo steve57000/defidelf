@@ -16,33 +16,17 @@ export const ContainerHome = styled.div`
     padding-top: 20px;
   }
 `
-export const ContainerLogo = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  height: 300px;
-  overflow-y: hidden;
-  border-radius: 0 0 50% 50%;
-
-  @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
-    .App-logo {
-      left: 16.7%;
-    }
-  }
-`
 export const TitleHomePage = styled.h1`
-  position: absolute;
-  top: 45%;
+  width: 80%;
   text-align: center;
   color: #d31515;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2em;
   @media (max-width: 720px) {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
   @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
-    font-size: 2em;
+    font-size: 1.8em;
     top: 35%;
     left: 40%;
   }
@@ -65,7 +49,8 @@ export const LinkAccueil = styled(NavLink)`
   background: -moz-linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
   background: -webkit-linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
   background: linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
-  top: 70%;
+  top: 2%;
+  right: 0;
   @media screen and (min-width: 320px) and (max-width: 820px) and (orientation: landscape) {
     top: 60%;
     left: 50%;
@@ -73,7 +58,7 @@ export const LinkAccueil = styled(NavLink)`
 
   &:hover {
     transform: scale(1.2);
-    font-size: 120%;
+    font-size: 110%;
     background: -moz-linear-gradient(90deg, rgba(218, 234, 212, 1) 0%, rgba(178, 218, 235, 1) 50%, rgba(172, 179, 213, 1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(218, 234, 212, 1) 0%, rgba(178, 218, 235, 1) 50%, rgba(172, 179, 213, 1) 100%);
     background: linear-gradient(90deg, rgba(218, 234, 212, 1) 0%, rgba(178, 218, 235, 1) 50%, rgba(172, 179, 213, 1) 100%);

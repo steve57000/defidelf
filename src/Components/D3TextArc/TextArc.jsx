@@ -6,8 +6,8 @@ function TextArc() {
     const svgRef = useRef(null);
     // Comportement
     useEffect(() => {
-        const width = 300
-        const height = 200
+        const width = 150
+        const height = 150
         //Create the SVG
         const svg = d3.select(svgRef.current)
         .attr('width', width)
@@ -18,21 +18,21 @@ function TextArc() {
 //Transition from the original arc path to a new arc path
         svg.selectAll("path")
         .transition().duration(4000).delay(1000)
-        .attr("d", "M 20,200 A60,70 0 0,1 280,200");
+        .attr("d", "M 30,90 A10,10.5 0 0,1 120,90");
     }, []);
 
 // affichage (render)
     return (
-        <svg ref={svgRef} viewBox="0 0 300 200">
+        <svg ref={svgRef} style={{ fontSize: "1.2em",fontWeight: "bold", whiteSpace: "pre"}}>
             <g>
                 <linearGradient id="linear-gradient">
                     <stop offset="0%" stopColor="#0240f9" stopOpacity="100%" />
                     <stop offset="30%" stopColor="#0b0979" stopOpacity="100%" />
                     <stop offset="100%" stopColor="#ff0000" stopOpacity="100%" />
                 </linearGradient>
-                <path id="wavy" d="M 0,180, A 100,0 0 0,1 300,180" style={{fill: "transparent", stroke: "transparent"}}></path>
-                <text>
-                    <textPath href="#wavy" startOffset="50%" style={{whiteSpace: "pre"}}> DÉFI-DELF </textPath>
+                <path id="wavy" d="M 0,140, A10,0 0 0,1 150,140" style={{fill: "none", stroke: "none"}}></path>
+                <text >
+                    <textPath href="#wavy" startOffset="50%" > DÉFI-DELF </textPath>
                 </text>
             </g>
         </svg>

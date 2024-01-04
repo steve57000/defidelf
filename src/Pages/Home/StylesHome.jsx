@@ -21,12 +21,12 @@ export const TitleHomePage = styled.h1`
   font-weight: bold;
   font-size: 2em;
   @media (max-width: 720px) {
-    font-size: 1.5em;
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 0
   }
   @media screen and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
-    font-size: 1.8em;
-    top: 35%;
-    left: 40%;
+    font-size: 1.7em;
   }
 `
 

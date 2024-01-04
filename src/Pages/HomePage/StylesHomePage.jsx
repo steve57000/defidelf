@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 // import { NavLink } from "react-router-dom";
 export const ContainerHome = styled.div`
   height: 100vh;
-  padding: 10% 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,9 +19,9 @@ export const ContainerHome = styled.div`
     font-weight: bold;
   }
 `
-export const TitleHomePage = styled.h1`
+export const TitleHomePage = styled.h2`
   text-align: center;
-  margin-bottom: 50px;
+  margin-top: 150px;
 `
 
 // export const ButtonUsers = styled(NavLink)`

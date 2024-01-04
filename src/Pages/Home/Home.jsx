@@ -26,7 +26,7 @@ function Home() {
   return (
     <ContainerHome id="Home">
         <LinkAccueil to={`/homePage`} >À propos !</LinkAccueil>
-        <h2 style={{marginTop: "40px"}}>Bienvenue sur la page d'accueil</h2>
+        <h2 style={{marginTop: "150px"}}>Bienvenue sur la page d'accueil</h2>
     </ContainerHome>
   );
 }

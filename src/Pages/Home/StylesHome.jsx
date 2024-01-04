@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const ContainerHome = styled.div`
-  width: 98vw;
   height: 100vh;
   display: flex;
   flex-direction: column;

@@ -1,8 +1,7 @@
 import React from 'react';
-import {ContainerHome, TitleHomePage } from './StylesHomePage';
-import {LinkAccueil} from "../Home/StylesHome";
+import {ContainerHome, TitleHomePage } from './AboutStyle';
 
-function HomePage() {
+function About() {
     // State (état, données)
     // Comportement
     // affichage (render)
@@ -10,7 +9,6 @@ function HomePage() {
 
 
         <ContainerHome >
-            <LinkAccueil to={`/`} >Accueil !</LinkAccueil>
             <TitleHomePage id="title-logo">À propos de <span className="TxtBlue">Défi-Delf</span></TitleHomePage>
             <p>L'association <span className="TxtBlue">Défi-Delf</span> vous propose une formation à l'apprentissage du français et à la préparation aux examens du Delf</p>
             <p>Niveaux A1, A2, B1 et B2</p>
@@ -42,4 +40,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default About;

@@ -6,12 +6,11 @@ import {
   Outlet,
 } from 'react-router-dom';
 
-import Header from '../Layout/Header';
+import Header from '../Layout/Header/Header';
 // import VerticalNav from '../layout/VerticalNav';
 import Home from '../Pages/Home/Home';
-import HomePage from "../Pages/HomePage/HomePage";
-// import ErrorPage from '../pages/ErrorPage';
-// import DashboardHome from "../pages/Dashboard";
+import About from "../Pages/About/About";
+import Contact from "../Pages/Contact/Contact";
 function BasicLayout() {
   return (
     <>
@@ -25,8 +24,9 @@ function App() {
     <Router basename="defidelf">
       <Routes>
         <Route exact path="/" element={<BasicLayout />} >
-            <Route index element={<Home />} />
-            <Route path="/homePage" element={<HomePage />} />
+          <Route index element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>

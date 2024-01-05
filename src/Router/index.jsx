@@ -23,7 +23,7 @@ function App() {
   return (
     <Router basename="defidelf">
       <Routes>
-        <Route exact path="/" element={<BasicLayout />} >
+        <Route exact path="" element={<BasicLayout />} >
           <Route index element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />

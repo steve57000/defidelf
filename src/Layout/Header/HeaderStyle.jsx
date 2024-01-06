@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { MoveLogoUp, SpinLogo, DropLogo } from "./HeaderKeyframe"
 import {NavLink} from "react-router-dom";
+
 export const ContainerHeader = styled.header`
   max-width: 1480px;
   width: 100vw;
@@ -14,6 +15,7 @@ export const ContainerHeader = styled.header`
   border-bottom: 1px solid #979696;
   box-shadow: 0 1px 3px #434343;
   padding: 0 10px;
+  margin: 0;
 `
 
 export const ContainerLogo = styled.div`
@@ -37,6 +39,41 @@ export const ContainerImg = styled.img`
       animation: ${MoveLogoUp} 4.8s ease-in-out, ${SpinLogo}  10s  linear, ${DropLogo} infinite 20s 5000ms ease-in-out;
   }
 `
+
+export const Nav = styled.nav`
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  right: 0;
+  bottom: -82px;
+  z-index: 10;
+  @media (max-width: 767px){
+    padding: 10px 0 0 0;
+  }
+`
+export const NavUl = styled.ul`
+  margin: 20px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  @media (max-width: 767px){
+    ${(props) => props.$isOpen ? `display: inline` : `display: none`};
+    width: 50vw;
+    height: auto;
+    margin-top: 40px;
+    position: absolute;
+    background-color: white;
+  }
+`
+
+export const NavLi = styled.li`
+  list-style-type: none;
+  padding-left: 10px;
+  @media (max-width: 767px){
+    width: 100%;
+    padding: 0;
+  }
+`
 export const LinkAccueil = styled(NavLink)`
   width: 180px;
   height: 50px;
@@ -48,6 +85,7 @@ export const LinkAccueil = styled(NavLink)`
   font-size: 110%;
   font-weight: bold;
   color: #344597;
+  border-radius: 10px;
   transition: all .5s ease-in-out;
   background: -moz-linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
   background: -webkit-linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
@@ -65,4 +103,40 @@ export const LinkAccueil = styled(NavLink)`
     letter-spacing: 2px;
     justify-content: center;
   }
+  @media (max-width: 767px){
+    border-radius: 0;
+    width: 100%;
+  }
+`
+export const ContainerBurger = styled.div`
+  display: none;
+  @media (max-width: 767px){
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    width: 2rem;
+    height: 2rem;
+    overflow : hidden;
+    margin-left: 10px;
+  }
+`
+const ItemBurger =
+    styled.div`
+      width: 2rem;
+      height: 0.25rem;
+      display: flex;
+      justify-content: space-around;
+      flex-flow: column nowrap;
+      background-color: black;
+      z-index: 100;
+    `
+export const StyledBurgerOne = styled(ItemBurger)`
+    ${(props) => props.$isOpen ? `transform : rotate(45deg)` : `transform : rotate(0)`};
+`
+export const StyledBurgerTwo = styled(ItemBurger)`
+  ${(props) => props.$isOpen ? `transform: translateX(100%)` : `transform: translateX(0)`};
+  ${(props) => props.$isOpen ? `opacity: 0` : `opacity: 1` };
+`
+export const StyledBurgerThree = styled(ItemBurger)`
+  ${(props) => props.$isOpen ? `transform : rotate(-45deg)` : `transform : rotate(0)`};
 `

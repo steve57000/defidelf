@@ -8,18 +8,34 @@ import TextArc from "../../Components/D3TextArc/TextArc";
 import TypeWritter from "../../Components/TypeWritter/TypeWritter";
 
 import {TitleHomePage} from "../../Pages/Home/StylesHome";
-import {ContainerHeader, ContainerImg, ContainerLogo} from "./HeaderStyle"
-import { LinkAccueil } from "./HeaderStyle"
+import {
+    ContainerHeader,
+    ContainerImg,
+    ContainerLogo,
+    Nav,
+    NavLi,
+    NavUl,
+    LinkAccueil,
+    ContainerBurger,
+    StyledBurgerOne,
+    StyledBurgerThree,
+    StyledBurgerTwo
+} from "./HeaderStyle"
+
+
 function Header() {
     const [isDisplayed, setIsDisplayed] = useState(false);
-  //assigning location variable
-  const location = useLocation();
+    const [burgerOpen, setBurgerOpen] = useState(false)
+    //assigning location variable
+    const location = useLocation();
+    //destructuring pathname from location
+    const { pathname } = location;
+    //Javascript split method to get the name of the path in array
+    const splitLocation = pathname.split('/');
 
-  //destructuring pathname from location
-  const { pathname } = location;
-  //Javascript split method to get the name of the path in array
-  const splitLocation = pathname.split('/');
-
+    const toggleBurger = () => {
+        setBurgerOpen(!burgerOpen)
+    }
     // Comportement
     useEffect(() => {
         setInterval(() => {
@@ -39,20 +55,33 @@ function Header() {
                     </>
                 }
             </TitleHomePage>
-            <nav style={{ position: "absolute", right: 0, display: "flex", flexDirection: "column"}} >
-              <LinkAccueil  to="/" className={splitLocation[1] === '' ? 'active' : ''}>
-                <span>Accueil</span>
-              </LinkAccueil >
-              <LinkAccueil
-                to="/about"
-                className={splitLocation[1] === 'about' ? 'active' : ''}
-              >
-                <span>À propos</span>
-              </LinkAccueil >
-              <LinkAccueil  to="/contact" className={splitLocation[1] === 'contact' ? 'active' : ''}>
-                <span>Contact</span>
-              </LinkAccueil >
-            </nav>
+            <Nav>
+              <NavUl $isOpen={burgerOpen} >
+                  <NavLi>
+                      <LinkAccueil  to="/" className={splitLocation[1] === '' ? 'active' : ''} >
+                          <span>Accueil</span>
+                      </LinkAccueil >
+                  </NavLi>
+                  <NavLi>
+                      <LinkAccueil
+                          to="/about"
+                          className={splitLocation[1] === 'about' ? 'active' : ''}
+                      >
+                          <span>À propos</span>
+                      </LinkAccueil >
+                  </NavLi>
+                  <NavLi>
+                      <LinkAccueil  to="/contact" className={splitLocation[1] === 'contact' ? 'active' : ''}>
+                          <span>Contact</span>
+                      </LinkAccueil >
+                  </NavLi>
+              </NavUl>
+                <ContainerBurger onClick={toggleBurger} >
+                    <StyledBurgerOne $isOpen={burgerOpen} ></StyledBurgerOne>
+                    <StyledBurgerTwo $isOpen={burgerOpen} ></StyledBurgerTwo>
+                    <StyledBurgerThree $isOpen={burgerOpen} ></StyledBurgerThree>
+                </ContainerBurger>
+            </Nav>
         </ContainerHeader>
     )
 }

@@ -18,7 +18,7 @@ export const TitleHomePage = styled.h1`
   color: #d31515;
   font-weight: bold;
   font-size: 2em;
-  @media (max-width: 720px) {
+  @media (max-width: 767px) {
     width: 100%;
     font-size: 1.2em;
     margin-top: 0

@@ -12,14 +12,10 @@ export const ContainerHome = styled.div`
     padding-top: 20px;
   }
 `
-export const TitleHomePage = styled.h1`
-  width: 80%;
-  text-align: center;
+export const TitleHomePage = styled.h1`text-align: center;
   color: #d31515;
   font-weight: bold;
-  font-size: 2em;
   @media (max-width: 767px) {
-    width: 100%;
     font-size: 1.2em;
     margin-top: 0
   }

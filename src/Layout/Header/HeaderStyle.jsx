@@ -1,122 +1,116 @@
 import { styled } from "styled-components";
-import { MoveLogoUp, SpinLogo, DropLogo } from "./HeaderKeyframe"
+import { MoveLogoUp, SpinLogo, DropLogo, BackgroundGradient } from "./HeaderKeyframe"
 import {NavLink} from "react-router-dom";
 
 export const ContainerHeader = styled.header`
   max-width: 1480px;
+  max-height: 200px;
+  height: 100%;
   width: 100vw;
-  background: -moz-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(178, 218, 235, 1) 60%, rgba(172, 179, 213, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(178, 218, 235, 1) 60%, rgba(172, 179, 213, 1) 100%);
-  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(178, 218, 235, 1) 60%, rgba(172, 179, 213, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffff",endColorstr="#acb3d5",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(123, 122, 122, 0.28) 60%, rgba(0, 0, 0, 0.6) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(123, 122, 122, 0.28) 60%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(123, 122, 122, 0.28) 60%, rgba(0, 0, 0, 0.6) 100%);
   position: relative;
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid #979696;
-  box-shadow: 0 1px 3px #434343;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 10px;
   margin: 0;
 `
 
 export const ContainerLogo = styled.div`
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   border-radius: 0 0 50% 50%;
-  width: 160px; height: 160px;
+  width: 210px;
+  height: 210px;
+  background: rgb(243, 243, 246);
+  background: -moz-radial-gradient(circle, rgba(255, 255, 255, 1) 9%, rgba(150, 228, 253, 0.41) 100%);
+  background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 1) 9%, rgba(150, 228, 253, 0.41) 100%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 9%, rgba(150, 228, 253, 0.41) 100%);
+  box-shadow: 6px 6px 10px 0 rgb(10 10 10 / 70%), inset 6px 9px 5px 0 rgba(150, 228, 253, 0.51);
   overflow: hidden;
 `
 export const ContainerImg = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   pointer-events: none;
   position: absolute;
   top: 28.8%;
   @media (prefers-reduced-motion: no-preference) {
-      box-shadow: inset 0 0 20px 1px rgba(113, 111, 18, 0.6);
-      border-radius: 50%;
-      filter: drop-shadow( 1px 0 0 #940303);
-      animation: ${MoveLogoUp} 4.8s ease-in-out, ${SpinLogo}  10s  linear, ${DropLogo} infinite 20s 5000ms ease-in-out;
+    box-shadow: inset 0 0 20px 1px rgba(113, 111, 18, 0.6), 0 0 10px  rgba(100, 109, 103, 0.66) ;
+    border-radius: 50%;
+    filter: drop-shadow(1px 0 0 #ffffff);
+    animation: ${MoveLogoUp} 4.8s ease-in-out, ${SpinLogo} 10s linear, ${DropLogo} infinite 20s 5000ms ease-in-out;
   }
 `
 
 export const Nav = styled.nav`
-  width: 100%;
-  height: 80px;
+  width: 30vw;
+  height: 40px;
   position: absolute;
   right: 0;
-  bottom: -82px;
-  z-index: 10;
-  @media (max-width: 767px){
+  top: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  padding: 10px;
+  @media (max-width: 767px) {
     padding: 10px 0 0 0;
   }
 `
 export const NavUl = styled.ul`
-  margin: 20px 0 0 0;
+  margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  @media (max-width: 767px){
-    ${(props) => props.$isOpen ? `display: inline` : `display: none`};
-    width: 50vw;
-    height: auto;
-    margin-top: 40px;
-    position: absolute;
-    background-color: white;
-  }
+  ${(props) => props.$isOpen ? `display: inline` : `display: none`};
+  height: auto;
 `
 
 export const NavLi = styled.li`
   list-style-type: none;
-  padding-left: 10px;
   @media (max-width: 767px){
     width: 100%;
     padding: 0;
   }
 `
 export const LinkAccueil = styled(NavLink)`
-  width: 180px;
-  height: 50px;
-  padding: 10px;
+  width: 200px;
+  height: 40px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   border: none;
   font-size: 110%;
   font-weight: bold;
-  color: #344597;
-  border-radius: 10px;
+  color: darkred;
   transition: all .5s ease-in-out;
-  background: -moz-linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
-  background: linear-gradient(90deg, rgba(218, 234, 212, 0.5) 0%, rgba(178, 218, 235, 0.5) 50%, rgba(172, 179, 213, 0.5) 100%);
+  background: rgb(243, 243, 246);
+  background: -moz-radial-gradient(circle, rgba(255, 255, 255, 1) 9%, rgba(150, 228, 253, 0.41) 100%);
+  background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 1) 9%, rgba(150, 228, 253, 0.41) 100%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 9%, rgba(150, 228, 253, 0.41) 100%);
 
   &:hover {
-    font-size: 110%;
-    background: -moz-linear-gradient(90deg, rgba(218, 234, 212, 1) 0%, rgba(178, 218, 235, 1) 50%, rgba(172, 179, 213, 1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(218, 234, 212, 1) 0%, rgba(178, 218, 235, 1) 50%, rgba(172, 179, 213, 1) 100%);
-    background: linear-gradient(90deg, rgba(218, 234, 212, 1) 0%, rgba(178, 218, 235, 1) 50%, rgba(172, 179, 213, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daead4",endColorstr="#acb3d5",GradientType=1);
-    box-shadow: -6px 6px 5px rgb(127 122 122 / 42%);
-    text-shadow: -2px 1px 2px rgba(162, 162, 162, 0.85);
-    color: red;
-    letter-spacing: 2px;
-    justify-content: center;
+    background: -moz-radial-gradient(circle, rgba(253, 164, 164, 0.44) 59%, rgba(253, 117, 117, 0.67) 100%);
+    background: -webkit-radial-gradient(circle, rgba(253, 164, 164, 0.44) 59%, rgba(253, 117, 117, 0.67) 100%);
+    background: radial-gradient(circle, rgba(253, 164, 164, 0.44) 59%, rgba(253, 117, 117, 0.67) 100%);
+    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#daead4",endColorstr="#acb3d5",GradientType=1);
   }
-  @media (max-width: 767px){
+
+  @media (max-width: 767px) {
     border-radius: 0;
     width: 100%;
   }
 `
 export const ContainerBurger = styled.div`
-  display: none;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  width: 2rem;
+  height: 2rem;
+  overflow : hidden;
   @media (max-width: 767px){
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-    width: 2rem;
-    height: 2rem;
-    overflow : hidden;
     margin-left: 10px;
   }
 `
@@ -127,7 +121,7 @@ const ItemBurger =
       display: flex;
       justify-content: space-around;
       flex-flow: column nowrap;
-      background-color: black;
+      background-color: #fffdfd;
       z-index: 100;
     `
 export const StyledBurgerOne = styled(ItemBurger)`

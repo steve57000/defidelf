@@ -7,11 +7,11 @@ import Logo from "../../logo1.png";
 import TextArc from "../../Components/D3TextArc/TextArc";
 import TypeWritter from "../../Components/TypeWritter/TypeWritter";
 
-import {TitleHomePage} from "../../Pages/Home/StylesHome";
 import {
     ContainerHeader,
     ContainerImg,
     ContainerLogo,
+    TitleHomePage,
     Nav,
     NavLi,
     NavUl,

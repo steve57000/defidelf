@@ -1,8 +1,7 @@
 import React from 'react';
 
 import {ContainerHome} from "./StylesHome";
-
-
+import {ContainerImg} from "../../Layout/Header/HeaderStyle";
 
 function Home() {
   // State (état, données)

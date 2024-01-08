@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/defidelf/static/css/main.896a8ebe.css",
-    "main.js": "/defidelf/static/js/main.78ed5c5d.js",
+    "main.js": "/defidelf/static/js/main.570aa9dc.js",
     "static/js/787.9e9f4ffd.chunk.js": "/defidelf/static/js/787.9e9f4ffd.chunk.js",
     "static/media/Alice-Regular.ttf": "/defidelf/static/media/Alice-Regular.6676c30016104188a3ec.ttf",
-    "static/media/logo1.png": "/defidelf/static/media/logo1.6477d6ae48c2d3b518f9.png",
+    "static/media/logo1.png": "/defidelf/static/media/logo1.43012a39b09ce343413c.png",
     "index.html": "/defidelf/index.html",
     "main.896a8ebe.css.map": "/defidelf/static/css/main.896a8ebe.css.map",
-    "main.78ed5c5d.js.map": "/defidelf/static/js/main.78ed5c5d.js.map",
+    "main.570aa9dc.js.map": "/defidelf/static/js/main.570aa9dc.js.map",
     "787.9e9f4ffd.chunk.js.map": "/defidelf/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.896a8ebe.css",
-    "static/js/main.78ed5c5d.js"
+    "static/js/main.570aa9dc.js"
   ]
 }
